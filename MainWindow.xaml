@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="423.712" Width="800">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="791*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="50" Margin="306,10,311,321" RenderTransformOrigin="1.443,0.195" Text="Таймер" Foreground="White"/>
+        <TextBlock x:Name="chet" FontSize="40" Margin="306,99,259,237" Foreground="White"></TextBlock>
+        <Button x:Name="start" Margin="352,279,348,70" Background="#FF581591" Content="начать" FontSize="16" Click="start_Click" Foreground="White"/>
+        <Button x:Name="pause" Margin="504,279,197,70" Background="#FF626266" Content="пауза" FontSize="16" Click="pause_Click" Foreground="White"/>
+        <Button x:Name="discharge" Margin="198,279,503,70" Background="#FF972535" Content="Сброс" FontSize="16" Click="discharge_Click" Foreground="White"/>
+        <ListBox x:Name="zapis" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="217" Margin="289,161,0,0" FontSize="13"/>
+    </Grid>
+</Window>
